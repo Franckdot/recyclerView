@@ -15,7 +15,7 @@ public class User {
     private String street;*/
     private String phone;
     private String website;
-    private String company;
+    //private String company;
 
     // Getters y Setters
     public int getId() {
