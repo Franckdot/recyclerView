@@ -7,9 +7,15 @@ public class User {
     private String name;
     private String email;
     //private String address;
+
+    /*public String getStreet() {
+        return street;
+    }
+
+    private String street;*/
     private String phone;
     private String website;
-    //private String company;
+    private String company;
 
     // Getters y Setters
     public int getId() {

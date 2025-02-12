@@ -18,10 +18,10 @@
             android:name=".MainActivity3"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity"
+            android:name=".controllador.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controllador.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

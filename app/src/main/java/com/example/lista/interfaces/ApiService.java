@@ -1,4 +1,6 @@
-package com.example.lista.modelo;
+package com.example.lista.interfaces;
+
+import com.example.lista.modelo.User;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -1,15 +1,16 @@
-package com.example.lista
+package com.example.lista.controllador
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.lista.R
 
 class DetailActivity : AppCompatActivity() {
     //private lateinit var detailTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail1)
+        setContentView(R.layout.activity_detail)
 
         // Recibir el dato pasado
         val itemDetail = intent.getStringExtra("ITEM_DETAIL")

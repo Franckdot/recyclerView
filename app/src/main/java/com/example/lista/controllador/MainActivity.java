@@ -1,4 +1,4 @@
-package com.example.lista;
+package com.example.lista.controllador;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,13 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.example.lista.modelo.ApiService;
-import com.example.lista.modelo.MyAdapter;
+
+import com.example.lista.R;
+import com.example.lista.interfaces.ApiService;
+import com.example.lista.adaptadores.MyAdapter;
 import com.example.lista.modelo.User;
+import com.google.gson.JsonArray;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     private MyAdapter myAdapter;
     private List<String> itemList;
     private List<User> users;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 int position = recyclerView.getChildAdapterPosition(v);
                 String clickedItem = itemList.get(position);
 
+                //JsonArray arregloInterno = itemList.getAsJsonArray("company");
+                //Log.d("Arreglo Interno", "tu arreglo: " + arregloInterno.toString());
 
                 // Handle the click event (e.g., show a Toast)
                 Log.d("Item Clicked", "You clicked: " + clickedItem);
@@ -64,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("ITEM_NAME",users.get(position).getName());
                 intent.putExtra("ITEM_EMAIL",users.get(position).getEmail());
                 intent.putExtra("ITEM_PHONE",users.get(position).getPhone());
-                //intent.putExtra("ITEM_ADDRESS",users.get(position).getAddress());
+                //intent.putExtra("ITEM_ADDRESS",users.get(position).getAddress().getAsJsonArray().toString());
                 //intent.putExtra("ITEM_COMPANY",users.get(position).getCompany());
                 intent.putExtra("ITEM_WEBSITE",users.get(position).getWebsite());
 
