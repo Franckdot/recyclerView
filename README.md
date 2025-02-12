@@ -1,5 +1,6 @@
 # Aplicacion who helpme to practice
 
+![android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 ## Descrition
 This is a simple application that help me to practice with the basic concepts of the programming languages that I am learning.
